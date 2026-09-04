@@ -148,24 +148,83 @@ table {
     overflow: hidden;
 }
 
+.adauga-melodie {
+    max-width: 700px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.adauga-melodie h2 {
+    color: #1db954;
+}
 
 
-@media (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-        gap: 15px;
-    }
+#musicForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #1f1f1f;
+    padding: 25px;
+    border-radius: 12px;
+}
 
-    h1 {
-        font-size: 32px;
-    }
+#musicForm label {
+    text-align: left;
+    color: white;
+    font-weight: bold;
+}
 
-    h2 {
-        font-size: 25px;
-    }
+#musicForm input,
+#musicForm textarea {
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+}
 
-    img {
-        width: 100%;
-        height: auto;
-    }
+#musicForm textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+#musicForm button {
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 7px;
+    background-color: #1db954;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#musicForm button:hover {
+    background-color: #17a34a;
+}
+
+
+#carduri {
+    margin-top: 30px;
+}
+
+.card {
+    background-color: #1f1f1f;
+    border-left: 5px solid #1db954;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.card h3 {
+    color: #1db954;
+    margin-top: 0;
+}
+
+.card p {
+    color: #cccccc;
 }

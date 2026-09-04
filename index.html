@@ -10,7 +10,6 @@
     <nav>
         <ul>
             <li><a href="index.html">Acasa</a></li>
-            <li><a href="registrare.html">Înregistrare</a></li>
             <li><a href="contacte.html">Contact</a></li>
         </ul>
     </nav>
@@ -32,5 +31,25 @@
         <li><a href="https://www.youtube.com/watch?v=iywaBOMvYLI">Toxicity</a></li>
         <li><a href="https://www.youtube.com/watch?v=eYDI8b5Nn5s&list=RDeYDI8b5Nn5s&start_radio=1">Buttercup</a></li>
     </ul>
+
+    <section class="adauga-melodie">
+    <h2>Adaugă o melodie</h2>
+
+    <form id="musicForm">
+
+        <label for="titlu">Titlu:</label>
+        <input type="text" id="titlu" placeholder="Introdu titlul melodiei" required>
+
+        <label for="descriere">Descriere:</label>
+        <textarea id="descriere" placeholder="Introdu descrierea melodiei" required></textarea>
+
+        <button type="submit">Adaugă</button>
+
+    </form>
+
+    <div id="carduri"></div>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
