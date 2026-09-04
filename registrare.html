@@ -1,21 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css"> 
+    <title>Înregistrare - Audio Streaming</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<main>
+<body>
     <nav>
         <ul>
-            <li><a href="index.html">Acasa</a></li>
-            <li><a href="registrare.html">Despre</a></li>
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="registrare.html">Înregistrare</a></li>
             <li><a href="contacte.html">Contact</a></li>
         </ul>
     </nav>
-</main>
-<body>
-    
+    <main>
+        <h1>Creare cont</h1>
+        <form id="registerForm">
+            <label for="username">Nume utilizator:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Parolă:</label>
+            <input type="password" id="password" name="password" required>
+            <label for="confirmPassword">Confirmă parola:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <label>
+                <input type="checkbox" id="terms" required>
+                Sunt de acord cu termenii și condițiile.
+            </label>
+            <button type="submit">Înregistrează-te</button>
+            <p id="message"></p>
+        </form>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
