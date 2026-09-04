@@ -110,6 +110,34 @@ main > ul li a:hover {
     color: #ffffff;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #1f1f1f;
+    border-radius: 15px;
+}
+
+form label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 12px;
+}
+
+
 
 @media (max-width: 600px) {
     nav ul {
